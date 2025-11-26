@@ -1,0 +1,20 @@
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# virtual environments
+.venv/
+venv/
+env/
+
+# WandB logs
+wandb/
+
+# macOS / Linux junk
+.DS_Store
+Thumbs.db
+
+# Jupyter / temporary stuff
+.ipynb_checkpoints/

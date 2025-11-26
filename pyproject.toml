@@ -1,0 +1,36 @@
+[project]
+name = "equibox_manipulation"
+version = "0.0.1"
+authors = [
+  { name="Nikolai Bolik", email="nbolik@hotmail.de" },
+  { name="Jakob Moser", email="moser@cl.uni-heidelberg.de" },
+]
+description = " Loading, saving and converting of Jax/Equinox transformer models and modules."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets<3.0.0",
+    "einops>=0.8.1",
+    "equinox>=0.13.0",
+    "jax[cuda12]>=0.7.2",
+    "optax>=0.2.6",
+    "tensorflow>=2.20.0",
+    "torch>=2.8.0",
+    "transformers>=4.55.3",
+    "wandb>=0.21.4",
+    "tensorflow>=2.20.0",
+]
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "ruff",
+    "black",
+]
+
+[tool.uv.dependencies]
+equibox = { path = "../JaxTransformerHub" }
